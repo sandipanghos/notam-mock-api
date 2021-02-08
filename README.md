@@ -30,7 +30,7 @@ responsible for dependency management.
 - ### Error
 
   ```
-    {"message": "pageNum is required"}
+    {"message": "notamNumber have missing peer icaoLocation"}
   ```
 
 - ### Get /notams/aixm
@@ -41,7 +41,7 @@ responsible for dependency management.
 
   ```<?xml version="1.0" encoding="UTF-8"?>
   <ApiErrorModel>
-  	<message>pageNum is required</message>
+  	<message>notamNumber have missing peer icaoLocation</message>
   </ApiErrorModel>
 
   ```
@@ -54,7 +54,7 @@ responsible for dependency management.
 
   ```<?xml version="1.0" encoding="UTF-8"?>
   <ApiErrorModel>
-    <message>pageNum is required</message>
+    <message>notamNumber have missing peer icaoLocation</message>
   </ApiErrorModel>
   ```
 
