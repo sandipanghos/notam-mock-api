@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "508340d0-3e56-4da8-bd33-5e37974fb121",
+		"name": "notam-mock-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/notams/geoJson",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{API_KEY}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{URL}}/notams/geoJson?pageNum=1&notamNumber=32345&pageSize=5&icaoLocation=34.0&locationRadius=0&locationLongitude=3&locationLatitude=4",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"notams",
+						"geoJson"
+					],
+					"query": [
+						{
+							"key": "pageNum",
+							"value": "1"
+						},
+						{
+							"key": "notamNumber",
+							"value": "32345"
+						},
+						{
+							"key": "pageSize",
+							"value": "5"
+						},
+						{
+							"key": "icaoLocation",
+							"value": "34.0"
+						},
+						{
+							"key": "locationRadius",
+							"value": "0"
+						},
+						{
+							"key": "locationLongitude",
+							"value": "3"
+						},
+						{
+							"key": "locationLatitude",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/notams/aixm",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{API_KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{URL}}/notams/aixm?pageNum=1&pageSize=23&icaoLocation=34.0&notamNumber=3e444&locationRadius=3&locationLatitude=4&locationLongitude=56.0",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"notams",
+						"aixm"
+					],
+					"query": [
+						{
+							"key": "pageNum",
+							"value": "1"
+						},
+						{
+							"key": "pageSize",
+							"value": "23"
+						},
+						{
+							"key": "icaoLocation",
+							"value": "34.0"
+						},
+						{
+							"key": "notamNumber",
+							"value": "3e444"
+						},
+						{
+							"key": "locationRadius",
+							"value": "3"
+						},
+						{
+							"key": "locationLatitude",
+							"value": "4"
+						},
+						{
+							"key": "locationLongitude",
+							"value": "56.0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/notams/aidap",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{API_KEY}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{URL}}/notams/aidap?pageNum=3&pageSize=23&icaoLocation=34.0&notamNumber=3e444&locationRadius=3&locationLatitude=4&locationLongitude=56.0",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"notams",
+						"aidap"
+					],
+					"query": [
+						{
+							"key": "pageNum",
+							"value": "3"
+						},
+						{
+							"key": "pageSize",
+							"value": "23"
+						},
+						{
+							"key": "icaoLocation",
+							"value": "34.0"
+						},
+						{
+							"key": "notamNumber",
+							"value": "3e444"
+						},
+						{
+							"key": "locationRadius",
+							"value": "3"
+						},
+						{
+							"key": "locationLatitude",
+							"value": "4"
+						},
+						{
+							"key": "locationLongitude",
+							"value": "56.0"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
