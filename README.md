@@ -1,6 +1,6 @@
 # Notam Mock API
 
-!
+
 
 ## Requirements
 
@@ -58,21 +58,23 @@ responsible for dependency management.
   </ApiErrorModel>
   ```
 
-  ```Note: search by criteria is not implemented as it is not required in mock api as discussed in forum .
+  ```
+  Note: 
+  Search by criteria is not implemented as it is not required in mock api as discussed in forum .
   Input Validation done for these query param below and x-api-key header.
   As discussed in forum all query param field validation not mandatory.This is same for other endpoint also
   ```
 
 ```
-Validation of query params
+    Validation of query params
 
-pageNum: Joi.number().integer().min(1).default(1),
-pageSize: Joi.number().integer().min(1).max(50).default(20),
-notamNumber: Joi.string(),
-icaoLocation: Joi.string(),
-locationRadius: Joi.number().precision(2),
-locationLongitude: Joi.number().precision(2),
-locationLatitude: Joi.number().precision(2)
+    pageNum: Joi.number().integer().min(1).default(1),
+    pageSize: Joi.number().integer().min(1).max(50).default(20),
+    notamNumber: Joi.string(),
+    icaoLocation: Joi.string(),
+    locationRadius: Joi.number().precision(2),
+    locationLongitude: Joi.number().precision(2),
+    locationLatitude: Joi.number().precision(2)
 
 ```
 
