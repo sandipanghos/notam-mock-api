@@ -1,7 +1,5 @@
 # Notam Mock API
 
-
-
 ## Requirements
 
 To use this SDK, you will need:
@@ -30,7 +28,7 @@ responsible for dependency management.
 - ### Error
 
   ```
-    {"message": "notamNumber have missing peer icaoLocation"}
+    {"message": "icaoLocation missing required peer notamNumber"}
   ```
 
 - ### Get /notams/aixm
@@ -41,7 +39,7 @@ responsible for dependency management.
 
   ```<?xml version="1.0" encoding="UTF-8"?>
   <ApiErrorModel>
-  	<message>notamNumber have missing peer icaoLocation</message>
+  	<message>icaoLocation missing required peer notamNumber</message>
   </ApiErrorModel>
 
   ```
@@ -54,29 +52,27 @@ responsible for dependency management.
 
   ```<?xml version="1.0" encoding="UTF-8"?>
   <ApiErrorModel>
-    <message>notamNumber have missing peer icaoLocation</message>
+    <message>icaoLocation missing required peer notamNumber</message>
   </ApiErrorModel>
   ```
 
-  ```
-  Note: 
-  Search by criteria is not implemented as it is not required in mock api as discussed in forum .
-  Input Validation done for these query param below and x-api-key header.
-  As discussed in forum all query param field validation not mandatory.This is same for other endpoint also
-  ```
+  - ### Note:
 
-```
-    Validation of query params
+            Search by criteria is not implemented as it is not required in mock api as discussed in forum .
+            Input Validation done for these query param below and x-api-key header.
+            As discussed in forum all query param field validation not mandatory.This is same for other endpoint also
 
-    pageNum: Joi.number().integer().min(1).default(1),
-    pageSize: Joi.number().integer().min(1).max(50).default(20),
-    notamNumber: Joi.string(),
-    icaoLocation: Joi.string(),
-    locationRadius: Joi.number().precision(2),
-    locationLongitude: Joi.number().precision(2),
-    locationLatitude: Joi.number().precision(2)
 
-```
+
+            Validation of query params
+
+            pageNum: Joi.number().integer().min(1).default(1),
+            pageSize: Joi.number().integer().min(1).max(50).default(20),
+            notamNumber: Joi.string(),
+            icaoLocation: Joi.string(),
+            locationRadius: Joi.number().precision(2),
+            locationLongitude: Joi.number().precision(2),
+            locationLatitude: Joi.number().precision(2)
 
 ## Postman collection
 
