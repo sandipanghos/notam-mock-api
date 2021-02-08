@@ -1,0 +1,94 @@
+const aixm = `<?xml version="1.0" encoding="UTF-8"?>
+<AixmSearchItemModelSearchResult>
+  <pageSize>10</pageSize>
+  <pageNum>3</pageNum>
+  <totalCount>124</totalCount>
+  <totalPages>13</totalPages>
+  <items>
+    <item>
+      <number>string</number>
+      <sequence>0</sequence>
+      <classification>string</classification>
+      <startTime>2021-02-07T12:28:55.985Z</startTime>
+      <endTime>2021-02-07T12:28:55.985Z</endTime>
+      <type>string</type>
+      <icaoLocation>string</icaoLocation>
+      <domesticLocation>string</domesticLocation>
+      <coordinates>0</coordinates>
+      <radius>0</radius>
+      <text>string</text>
+    </item>
+    <item>
+      <number>string</number>
+      <sequence>0</sequence>
+      <classification>string</classification>
+      <startTime>2021-02-07T12:28:55.985Z</startTime>
+      <endTime>2021-02-07T12:28:55.985Z</endTime>
+      <type>string</type>
+      <icaoLocation>string</icaoLocation>
+      <domesticLocation>string</domesticLocation>
+      <coordinates>0</coordinates>
+      <radius>0</radius>
+      <text>string</text>
+    </item>
+    <item>
+      <number>string</number>
+      <sequence>0</sequence>
+      <classification>string</classification>
+      <startTime>2021-02-07T12:28:55.985Z</startTime>
+      <endTime>2021-02-07T12:28:55.985Z</endTime>
+      <type>string</type>
+      <icaoLocation>string</icaoLocation>
+      <domesticLocation>string</domesticLocation>
+      <coordinates>0</coordinates>
+      <radius>0</radius>
+      <text>string</text>
+    </item>
+  </items>
+</AixmSearchItemModelSearchResult>`
+
+const aidap = `<?xml version="1.0" encoding="UTF-8"?>
+<AidapSearchItemModelSearchResult>
+  <pageSize>10</pageSize>
+  <pageNum>3</pageNum>
+  <totalCount>124</totalCount>
+  <totalPages>13</totalPages>
+  <items>
+    <item>
+        <number>string</number>
+        <sequence>0</sequence>
+        <classification>string</classification>
+        <startTime>2021-02-07T12:25:33.983Z</startTime>
+        <endTime>2021-02-07T12:25:33.983Z</endTime>
+        <type>string</type>
+        <icaoLocation>string</icaoLocation>
+        <domesticLocation>string</domesticLocation>
+        <text>string</text>
+    </item>
+    <item>
+        <number>string</number>
+        <sequence>0</sequence>
+        <classification>string</classification>
+        <startTime>2021-02-07T12:25:33.983Z</startTime>
+        <endTime>2021-02-07T12:25:33.983Z</endTime>
+        <type>string</type>
+        <icaoLocation>string</icaoLocation>
+        <domesticLocation>string</domesticLocation>
+        <text>string</text>
+    </item>
+    <item>
+        <number>string</number>
+        <sequence>0</sequence>
+        <classification>string</classification>
+        <startTime>2021-02-07T12:25:33.983Z</startTime>
+        <endTime>2021-02-07T12:25:33.983Z</endTime>
+        <type>string</type>
+        <icaoLocation>string</icaoLocation>
+        <domesticLocation>string</domesticLocation>
+        <text>string</text>
+    </item>
+  </items>
+</AidapSearchItemModelSearchResult>
+`
+
+module.exports = { aixm, aidap }
