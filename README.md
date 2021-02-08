@@ -4,7 +4,7 @@
 
 To use this SDK, you will need:
 
-- [NodeJS v14.15.4 or above\*\*](https://nodejs.org/)
+- [NodeJS v14.15.4 or above](https://nodejs.org/)
 
 Node installation will include [NPM](https://www.npmjs.com/), which is
 responsible for dependency management.
